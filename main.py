@@ -56,13 +56,13 @@ def get_sorted_character_counts(text):
         if not character.isalpha():
             continue
         
-        # TODO: If it's already been counted and recorded, skip it
+        # If it's already been counted and recorded, skip it
         if character in characters_already_handled:
             continue
         
         # Otherwise, count how many times it appears...
         count = text.count(character)
-        # And add to the list a dictionary (not a dictionary ENTRY, but an entire dictionary) which represents the character and its count. Again, just to be clear: each entry on the list is an ENTIRE dictionary, representing one character and its count.
+        # And add to the list a dictionary (not a dictionary ENTRY, but an entire dictionary) which represents the character and its count. Again: each entry on the list is an ENTIRE dictionary, representing one character and its count.
         character_counts.append({
             "character":character,
             "count":count
